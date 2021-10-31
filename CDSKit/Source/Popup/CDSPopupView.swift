@@ -59,10 +59,10 @@ public class CDSPopupView: UIView {
         backgroundColor = CDSColor.secondaryBG
         layer.cornerRadius = 10
         
-        self.addSubviews([titleLabel,
-                          infoLabel,
-                          cancelButton,
-                          okButton])
+        self.addSubview(titleLabel)
+        self.addSubview(infoLabel)
+        self.addSubview(cancelButton)
+        self.addSubview(okButton)
         
         self.snp.makeConstraints {
             $0.height.equalTo(164)
