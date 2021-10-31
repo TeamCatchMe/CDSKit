@@ -19,9 +19,20 @@ let package = Package(
     targets: [
         .target(
             name: "CDSKit",
-            dependencies: [],
+            dependencies: [
+                .product(name: "SnapKit", package: "SnapKit")
+            ],
             path: "CDSKit/Source",
-            resources: []
+            resources: [
+                .process("Resource/Fonts/DINPro-Bold.otf"),
+                .process("Resource/Fonts/DINPro-Medium.otf"),
+                .process("Resource/Fonts/DINPro-Regular.otf"),
+                .process("Resource/Fonts/NanumSquareRoundOTFEB.otf"),
+                .process("Resource/Fonts/SpoqaHanSansNeo-Bold.otf"),
+                .process("Resource/Fonts/SpoqaHanSansNeo-Medium.otf"),
+                .process("Resource/Fonts/SpoqaHanSansNeo-Regular.otf"),
+                .process("Resource/CDSAsset.xcassets")
+            ]
         )
     ]
 )
