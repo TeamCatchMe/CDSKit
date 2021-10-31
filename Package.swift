@@ -25,7 +25,7 @@ let package = Package(
             path: "CDSKit/Source",
             resources: [
                 .process("Resource/Fonts"),
-                .process("Resource/CDSAsset.xcassets")
+                .process("Foundation/CDSIcon.xcassets")
             ]
         )
     ]
