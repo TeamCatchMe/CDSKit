@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "catchuScrollRectangle131.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "catchuScrollRectangle131@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "catchuScrollRectangle131@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

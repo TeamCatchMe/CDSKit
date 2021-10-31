@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "colorSkybluePhase1Size151.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "colorSkybluePhase1Size151@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "colorSkybluePhase1Size151@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
