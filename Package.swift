@@ -24,13 +24,13 @@ let package = Package(
             ],
             path: "CDSKit/Source",
             resources: [
-                .process("Resource/Fonts/DINPro-Bold.otf"),
-                .process("Resource/Fonts/DINPro-Medium.otf"),
-                .process("Resource/Fonts/DINPro-Regular.otf"),
-                .process("Resource/Fonts/NanumSquareRoundOTFEB.otf"),
-                .process("Resource/Fonts/SpoqaHanSansNeo-Bold.otf"),
-                .process("Resource/Fonts/SpoqaHanSansNeo-Medium.otf"),
-                .process("Resource/Fonts/SpoqaHanSansNeo-Regular.otf"),
+                .copy("Resource/Fonts/DINPro-Bold.otf"),
+                .copy("Resource/Fonts/DINPro-Medium.otf"),
+                .copy("Resource/Fonts/DINPro-Regular.otf"),
+                .copy("Resource/Fonts/NanumSquareRoundOTFEB.otf"),
+                .copy("Resource/Fonts/SpoqaHanSansNeo-Bold.otf"),
+                .copy("Resource/Fonts/SpoqaHanSansNeo-Medium.otf"),
+                .copy("Resource/Fonts/SpoqaHanSansNeo-Regular.otf"),
                 .process("Resource/CDSAsset.xcassets")
             ]
         )
