@@ -197,5 +197,15 @@ public enum CDSColor {
         return CDSBaseColor.catchu800
     }
   
+    // MARK: - PageControl
+    
+    public static var dotColor: UIColor {
+        return CDSBaseColor.gray400
+    }
+    
+    public static var selectedColor: UIColor {
+        return CDSBaseColor.pink100
+    }
+    
 }
 
