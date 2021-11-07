@@ -40,7 +40,7 @@ class CDSWidePageControl: UIView {
     
     // MARK: - Initalizing
     
-    public override init() {
+    public init() {
         super.init(frame: .zero)
         isOpaque = false
     }
