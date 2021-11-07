@@ -26,6 +26,10 @@ public enum CDSColor {
         return CDSBaseColor.black200
     }
     
+    public static var pointedBG: UIColor {
+        return CDSBaseColor.pink100
+    }
+    
     public static var popupBG: UIColor {
         return CDSBaseColor.popupBackground
     }
@@ -50,6 +54,10 @@ public enum CDSColor {
     
     public static var textQuinto: UIColor {
         return CDSBaseColor.gray500
+    }
+    
+    public static var textPointer: UIColor {
+        return CDSBaseColor.pink100
     }
     
     //  MARK: - Dim
@@ -136,6 +144,24 @@ public enum CDSColor {
         return CDSBaseColor.gray200
     }
     
+    // MARK: - TextView
+    
+    public static var textViewNormal: UIColor {
+        return CDSBaseColor.black200
+    }
+    
+    public static var textViewCursor: UIColor {
+        return CDSBaseColor.pink100
+    }
+    
+    public static var textViewPlaceholder: UIColor {
+        return CDSBaseColor.gray200
+    }
+    
+    public static var textViewZeroCounter: UIColor {
+        return CDSBaseColor.gray200
+    }
+    
     
     //  MARK: - Catchu
     
@@ -171,5 +197,15 @@ public enum CDSColor {
         return CDSBaseColor.catchu800
     }
   
+    // MARK: - PageControl
+    
+    public static var dotColor: UIColor {
+        return CDSBaseColor.gray400
+    }
+    
+    public static var selectedColor: UIColor {
+        return CDSBaseColor.pink100
+    }
+    
 }
 

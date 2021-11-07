@@ -31,34 +31,36 @@ public struct CDSCatchu {
     
     // MARK: - Method
     
+    /// 캐츄 UIImage를 가져오는 메소드
     public func selectedCatchu(color: Int, phase: Int) -> UIImage? {
         var type: String?
         let value = CatchuType.init(rawValue: color)
         
         switch value {
         case .green:
-            type = "green"
+            type = "Green"
         case .yellowgreen:
-            type = "yellowgreen"
+            type = "Yellowgreen"
         case .orange:
-            type = "orange"
+            type = "Orange"
         case .skyblue:
-            type = "skyblue"
+            type = "Skyblue"
         case .white:
-            type = "white"
+            type = "White"
         case .blue:
-            type = "blue"
+            type = "Blue"
         case .purple:
-            type = "purple"
+            type = "Purple"
         case .yellow:
-            type = "yellow"
+            type = "Yellow"
         case .none:
             type = ""
         }
         
-        return UIImage(named: "color\(String(describing: type))Phase\(phase)") ?? nil
+        return UIImage(named: "catchu\(String(describing: type))\(phase)") ?? nil
     }
     
+    /// 캐츄 메인 배경색을 가져오는 메소드
     public func selectedCatchuBG(color: Int) -> UIColor {
         let value = CatchuType.init(rawValue: color)
         
@@ -81,6 +83,32 @@ public struct CDSCatchu {
             return CDSCatchuColor.yellow.backgroundColor
         case .none:
             return UIColor.init()
+        }
+    }
+    
+    /// 캐츄 모아보기뷰 배경 UIImage를 가져오는 메소드
+    public func selectedCatchuBGImage(color: Int) -> UIImage? {
+        let value = CatchuType.init(rawValue: color)
+        
+        switch value {
+        case .green:
+            return CDSIcon.bg100
+        case .yellowgreen:
+            return CDSIcon.bg200
+        case .orange:
+            return CDSIcon.bg300
+        case .skyblue:
+            return CDSIcon.bg400
+        case .white:
+            return CDSIcon.bg500
+        case .blue:
+            return CDSIcon.bg600
+        case .purple:
+            return CDSIcon.bg700
+        case .yellow:
+            return CDSIcon.bg800
+        case .none:
+            return nil
         }
     }
 }

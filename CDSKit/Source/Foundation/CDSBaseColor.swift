@@ -61,6 +61,10 @@ internal enum CDSBaseColor {
     static var gray500: UIColor {
         return UIColor(hex: "#E7E7E7")
     }
+    
+    static var gray410: UIColor {
+        return UIColor(hex: "#E4E4E4")
+    }
 
     static var gray400: UIColor {
         return UIColor(hex: "#B7B7B7")
@@ -93,10 +97,6 @@ internal enum CDSBaseColor {
     }
 
     static var black200: UIColor {
-        return UIColor(hex: "#2F2F2F")
-    }
-
-    static var black300: UIColor {
         return UIColor(hex: "#2F2F2F")
     }
 
