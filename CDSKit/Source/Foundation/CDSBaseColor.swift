@@ -32,7 +32,7 @@ fileprivate extension UIColor {
  
 */
 
-internal enum CDSBaseColor {
+public enum CDSBaseColor {
     
     //  MARK: - Brand Colors
     
