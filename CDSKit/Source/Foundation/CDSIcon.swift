@@ -111,6 +111,7 @@ public enum CDSIcon {
     public static var imgCatchGuide: UIImage { .load(name: "imgCatchGuide") }
     public static var imgCharacterViewEmptyState: UIImage { .load(name: "imgCharacterViewEmptyState") }
     public static var imgGroupCatchu: UIImage { .load(name: "imgGroupCatchu") }
+    public static var imgCryingCatchu: UIImage { .load(name: "imgCryingCatchu") }
     public static var imgLevelTag1: UIImage { .load(name: "leveltag1") }
     public static var imgLevelTag2: UIImage { .load(name: "leveltag2") }
     public static var imgLevelTag3: UIImage { .load(name: "leveltag3") }
