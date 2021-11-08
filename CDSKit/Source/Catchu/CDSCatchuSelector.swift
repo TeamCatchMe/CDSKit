@@ -189,9 +189,9 @@ enum CatchuType: Int {
     case green = 1
     case yellowgreen = 2
     case orange = 3
-    case skyblue = 4
-    case white = 5
-    case blue = 6
-    case purple = 7
-    case yellow = 8
+    case blue = 4
+    case purple = 5
+    case skyblue = 6
+    case yellow = 7
+    case white = 8
 }
