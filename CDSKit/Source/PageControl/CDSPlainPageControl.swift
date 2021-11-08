@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CDSPlainPageControl: UIView {
+public class CDSPlainPageControl: UIView {
     
     // MARK: - Public Properties
     
