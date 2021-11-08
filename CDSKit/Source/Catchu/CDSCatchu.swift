@@ -14,31 +14,18 @@ import UIKit
  
 */
 
-public class CDSCatchu {
-    
-    // MARK: - Initalizing
-    
-    public init() {
-        
-    }
-    
-    // MARK: - Enum
-    
-    public enum CatchuType: Int {
-        case green = 1
-        case yellowgreen = 2
-        case orange = 3
-        case skyblue = 4
-        case white = 5
-        case blue = 6
-        case purple = 7
-        case yellow = 8
-    }
+public protocol CDSCatchu {
+    func selectedCatchu(color: Int, phase: Int) -> UIImage?
+    func selectedCatchuBG(color: Int) -> UIColor
+    func selectedCatchuBGImage(color: Int) -> UIImage?
+}
+
+extension CDSCatchu {
     
     // MARK: - Method
     
     /// 캐츄 UIImage를 가져오는 메소드
-    public func selectedCatchu(color: Int, phase: Int) -> UIImage? {
+    func selectedCatchu(color: Int, phase: Int) -> UIImage? {
         var type: String?
         let value = CatchuType.init(rawValue: color)
         
@@ -67,7 +54,7 @@ public class CDSCatchu {
     }
     
     /// 캐츄 메인 배경색을 가져오는 메소드
-    public func selectedCatchuBG(color: Int) -> UIColor {
+    func selectedCatchuBG(color: Int) -> UIColor {
         let value = CatchuType.init(rawValue: color)
         
         switch value {
@@ -93,7 +80,7 @@ public class CDSCatchu {
     }
     
     /// 캐츄 모아보기뷰 배경 UIImage를 가져오는 메소드
-    public func selectedCatchuBGImage(color: Int) -> UIImage? {
+    func selectedCatchuBGImage(color: Int) -> UIImage? {
         let value = CatchuType.init(rawValue: color)
         
         switch value {
@@ -119,3 +106,15 @@ public class CDSCatchu {
     }
 }
 
+// MARK: - Enum
+
+enum CatchuType: Int {
+    case green = 1
+    case yellowgreen = 2
+    case orange = 3
+    case skyblue = 4
+    case white = 5
+    case blue = 6
+    case purple = 7
+    case yellow = 8
+}
