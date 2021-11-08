@@ -1,5 +1,5 @@
 //
-//  CDSCatchu.swift
+//  CDSCatchuSelector.swift
 //  
 //
 //  Created by SHIN YOON AH on 2021/10/31.
@@ -14,18 +14,18 @@ import UIKit
  
 */
 
-public protocol CDSCatchu {
-    func selectedCatchu(color: Int, phase: Int) -> UIImage?
-    func selectedCatchuBG(color: Int) -> UIColor
-    func selectedCatchuBGImage(color: Int) -> UIImage?
+public protocol CDSCatchuSelector {
+    optional func selectedCatchu(color: Int, phase: Int)
+    optional func selectedCatchuBG(color: Int)
+    optional func selectedCatchuBGImage(color: Int)
 }
 
-extension CDSCatchu {
+extension CDSCatchuSelector where Self: UIImageView {
     
     // MARK: - Method
     
     /// 캐츄 UIImage를 가져오는 메소드
-    func selectedCatchu(color: Int, phase: Int) -> UIImage? {
+    func selectedCatchu(color: Int, phase: Int) {
         var type: String?
         let value = CatchuType.init(rawValue: color)
         
@@ -50,59 +50,67 @@ extension CDSCatchu {
             type = ""
         }
         
-        return UIImage(named: "catchu\(String(describing: type))\(phase)") ?? nil
-    }
-    
-    /// 캐츄 메인 배경색을 가져오는 메소드
-    func selectedCatchuBG(color: Int) -> UIColor {
-        let value = CatchuType.init(rawValue: color)
-        
-        switch value {
-        case .green:
-            return CDSCatchuColor.green.backgroundColor
-        case .yellowgreen:
-            return CDSCatchuColor.yellowgreen.backgroundColor
-        case .orange:
-            return CDSCatchuColor.orange.backgroundColor
-        case .skyblue:
-            return CDSCatchuColor.skyblue.backgroundColor
-        case .white:
-            return CDSCatchuColor.white.backgroundColor
-        case .blue:
-            return CDSCatchuColor.blue.backgroundColor
-        case .purple:
-            return CDSCatchuColor.purple.backgroundColor
-        case .yellow:
-            return CDSCatchuColor.yellow.backgroundColor
-        case .none:
-            return UIColor.init()
-        }
+        self.image = UIImage(named: "catchu\(String(describing: type))\(phase)") ?? nil
     }
     
     /// 캐츄 모아보기뷰 배경 UIImage를 가져오는 메소드
-    func selectedCatchuBGImage(color: Int) -> UIImage? {
+    func selectedCatchuBGImage(color: Int) {
+        var type: UIImage?
         let value = CatchuType.init(rawValue: color)
         
         switch value {
         case .green:
-            return CDSIcon.bg100
+            type = CDSIcon.bg100
         case .yellowgreen:
-            return CDSIcon.bg200
+            type = CDSIcon.bg200
         case .orange:
-            return CDSIcon.bg300
+            type = CDSIcon.bg300
         case .skyblue:
-            return CDSIcon.bg400
+            type = CDSIcon.bg400
         case .white:
-            return CDSIcon.bg500
+            type = CDSIcon.bg500
         case .blue:
-            return CDSIcon.bg600
+            type = CDSIcon.bg600
         case .purple:
-            return CDSIcon.bg700
+            type = CDSIcon.bg700
         case .yellow:
-            return CDSIcon.bg800
+            type = CDSIcon.bg800
         case .none:
-            return nil
+            type = nil
         }
+        
+        self.image = type
+    }
+}
+
+extension CDSCatchuSelector where Self: UIView {
+    /// 캐츄 메인 배경색을 가져오는 메소드
+    func selectedCatchuBG(color: Int) {
+        var colorType: UIColor?
+        let value = CatchuType.init(rawValue: color)
+        
+        switch value {
+        case .green:
+            colorType = CDSCatchuColor.green.backgroundColor
+        case .yellowgreen:
+            colorType = CDSCatchuColor.yellowgreen.backgroundColor
+        case .orange:
+            colorType = CDSCatchuColor.orange.backgroundColor
+        case .skyblue:
+            colorType = CDSCatchuColor.skyblue.backgroundColor
+        case .white:
+            colorType = CDSCatchuColor.white.backgroundColor
+        case .blue:
+            colorType = CDSCatchuColor.blue.backgroundColor
+        case .purple:
+            colorType = CDSCatchuColor.purple.backgroundColor
+        case .yellow:
+            colorType = CDSCatchuColor.yellow.backgroundColor
+        case .none:
+            colorType = nil
+        }
+        
+        self.backgroundColor = colorType
     }
 }
 
