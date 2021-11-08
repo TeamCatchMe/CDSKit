@@ -15,9 +15,9 @@ import UIKit
 */
 
 public protocol CDSCatchuSelector {
-    optional func selectedCatchu(color: Int, phase: Int)
-    optional func selectedCatchuBG(color: Int)
-    optional func selectedCatchuBGImage(color: Int)
+    func selectedCatchu(color: Int, phase: Int)
+    func selectedCatchuBG(color: Int)
+    func selectedCatchuBGImage(color: Int)
 }
 
 extension CDSCatchuSelector where Self: UIImageView {
