@@ -14,10 +14,10 @@ import UIKit
  
 */
 
-public protocol CDSCatchuSelector {
-    func selectedCatchu(color: Int, phase: Int)
-    func selectedCatchuBG(color: Int)
-    func selectedCatchuBGImage(color: Int)
+@objc public protocol CDSCatchuSelector: AnyObject {
+    @objc optional func selectedCatchu(color: Int, phase: Int)
+    @objc optional func selectedCatchuBG(color: Int)
+    @objc optional func selectedCatchuBGImage(color: Int)
 }
 
 extension CDSCatchuSelector where Self: UIImageView {
