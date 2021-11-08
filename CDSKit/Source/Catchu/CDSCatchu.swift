@@ -14,7 +14,7 @@ import UIKit
  
 */
 
-public struct CDSCatchu {
+public class CDSCatchu {
     
     // MARK: - Initalizing
     
