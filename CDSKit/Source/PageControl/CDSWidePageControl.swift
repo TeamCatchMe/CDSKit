@@ -51,14 +51,14 @@ public class CDSWidePageControl: UIView {
     
     // MARK: - Override Methods
     
-    override var intrinsicContentSize: CGSize {
+    public override var intrinsicContentSize: CGSize {
         let width = CGFloat(pages) * dotSize + CGFloat(pages - 1) * spacing
         let height = dotSize
         
         return CGSize(width: width, height: height)
     }
     
-    override func draw(_ rect: CGRect) {
+    public override func draw(_ rect: CGRect) {
         (0..<pages).forEach { page in
             var center = CGPoint(x: 0, y: 0)
             let currentDotSize = (page == selectedPage ? selectedDotSize : dotSize)

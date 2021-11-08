@@ -46,7 +46,7 @@ public class CDSPlainPageControl: UIView {
     
     // MARK: - Override Methods
     
-    override func draw(_ rect: CGRect) {
+    public override func draw(_ rect: CGRect) {
         (0..<pages).forEach { page in
             (page == selectedPage ? selectedColor : dotColor).setFill()
             
