@@ -26,37 +26,100 @@ extension CDSCatchuSelector where Self: UIImageView {
     
     /// 캐츄 UIImage를 가져오는 메소드
     public func selectedCatchu(color: Int, phase: Int) {
-        var type: String?
         let value = CatchuType.init(rawValue: color)
         
         switch value {
         case .green:
-            type = "green"
+            switch phase {
+            case 1:
+                self.image = CDSIcon.catchuGreen1
+            case 2:
+                self.image = CDSIcon.catchuGreen2
+            case 3:
+                self.image = CDSIcon.catchuGreen3
+            default:
+                break
+            }
         case .yellowgreen:
-            type = "yellowgreen"
+            switch phase {
+            case 1:
+                self.image = CDSIcon.catchuYellowgreen1
+            case 2:
+                self.image = CDSIcon.catchuYellowgreen2
+            case 3:
+                self.image = CDSIcon.catchuYellowgreen3
+            default:
+                break
+            }
         case .orange:
-            type = "orange"
+            switch phase {
+            case 1:
+                self.image = CDSIcon.catchuOrange1
+            case 2:
+                self.image = CDSIcon.catchuOrange2
+            case 3:
+                self.image = CDSIcon.catchuOrange3
+            default:
+                break
+            }
         case .skyblue:
-            type = "skyblue"
+            switch phase {
+            case 1:
+                self.image = CDSIcon.catchuSkyblue1
+            case 2:
+                self.image = CDSIcon.catchuSkyblue2
+            case 3:
+                self.image = CDSIcon.catchuSkyblue3
+            default:
+                break
+            }
         case .white:
-            type = "white"
+            switch phase {
+            case 1:
+                self.image = CDSIcon.catchuWhite1
+            case 2:
+                self.image = CDSIcon.catchuWhite2
+            case 3:
+                self.image = CDSIcon.catchuWhite3
+            default:
+                break
+            }
         case .blue:
-            type = "blue"
+            switch phase {
+            case 1:
+                self.image = CDSIcon.catchuBlue1
+            case 2:
+                self.image = CDSIcon.catchuBlue2
+            case 3:
+                self.image = CDSIcon.catchuBlue3
+            default:
+                break
+            }
         case .purple:
-            type = "purple"
+            switch phase {
+            case 1:
+                self.image = CDSIcon.catchuPurple1
+            case 2:
+                self.image = CDSIcon.catchuPurple2
+            case 3:
+                self.image = CDSIcon.catchuPurple3
+            default:
+                break
+            }
         case .yellow:
-            type = "yellow"
+            switch phase {
+            case 1:
+                self.image = CDSIcon.catchuYellow1
+            case 2:
+                self.image = CDSIcon.catchuYellow2
+            case 3:
+                self.image = CDSIcon.catchuYellow3
+            default:
+                break
+            }
         case .none:
-            type = ""
+            break
         }
-        
-        #if SWIFT_PACKAGE
-        guard let image = UIImage(named: "catchu_\(String(describing: type))\(phase)", in: .module, compatibleWith: nil) else {
-            assert(false, "이미지 로드 실패")
-        }
-        
-        self.image = image
-        #endif
     }
     
     /// 캐츄 모아보기뷰 배경 UIImage를 가져오는 메소드
