@@ -25,7 +25,7 @@ extension CDSCatchuSelector where Self: UIImageView {
     // MARK: - Method
     
     /// 캐츄 UIImage를 가져오는 메소드
-    func selectedCatchu(color: Int, phase: Int) {
+    public func selectedCatchu(color: Int, phase: Int) {
         var type: String?
         let value = CatchuType.init(rawValue: color)
         
@@ -54,7 +54,7 @@ extension CDSCatchuSelector where Self: UIImageView {
     }
     
     /// 캐츄 모아보기뷰 배경 UIImage를 가져오는 메소드
-    func selectedCatchuBGImage(color: Int) {
+    public func selectedCatchuBGImage(color: Int) {
         var type: UIImage?
         let value = CatchuType.init(rawValue: color)
         
@@ -85,7 +85,7 @@ extension CDSCatchuSelector where Self: UIImageView {
 
 extension CDSCatchuSelector where Self: UIView {
     /// 캐츄 메인 배경색을 가져오는 메소드
-    func selectedCatchuBG(color: Int) {
+    public func selectedCatchuBG(color: Int) {
         var colorType: UIColor?
         let value = CatchuType.init(rawValue: color)
         
