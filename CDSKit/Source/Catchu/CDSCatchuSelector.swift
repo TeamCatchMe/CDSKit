@@ -50,7 +50,9 @@ extension CDSCatchuSelector where Self: UIImageView {
             type = ""
         }
         
+        #if SWIFT_PACKAGE
         self.image = UIImage(named: "catchu_\(String(describing: type))\(phase)") ?? nil
+        #endif
     }
     
     /// 캐츄 모아보기뷰 배경 UIImage를 가져오는 메소드
