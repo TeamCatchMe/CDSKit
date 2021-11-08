@@ -31,26 +31,26 @@ extension CDSCatchuSelector where Self: UIImageView {
         
         switch value {
         case .green:
-            type = "Green"
+            type = "green"
         case .yellowgreen:
-            type = "Yellowgreen"
+            type = "yellowgreen"
         case .orange:
-            type = "Orange"
+            type = "orange"
         case .skyblue:
-            type = "Skyblue"
+            type = "skyblue"
         case .white:
-            type = "White"
+            type = "white"
         case .blue:
-            type = "Blue"
+            type = "blue"
         case .purple:
-            type = "Purple"
+            type = "purple"
         case .yellow:
-            type = "Yellow"
+            type = "yellow"
         case .none:
             type = ""
         }
         
-        self.image = UIImage(named: "catchu\(String(describing: type))\(phase)") ?? nil
+        self.image = UIImage(named: "catchu_\(String(describing: type))\(phase)") ?? nil
     }
     
     /// 캐츄 모아보기뷰 배경 UIImage를 가져오는 메소드
