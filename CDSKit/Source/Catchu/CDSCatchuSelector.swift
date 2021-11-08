@@ -51,7 +51,11 @@ extension CDSCatchuSelector where Self: UIImageView {
         }
         
         #if SWIFT_PACKAGE
-        self.image = UIImage(named: "catchu_\(String(describing: type))\(phase)") ?? nil
+        guard let image = UIImage(named: "catchu_\(String(describing: type))\(phase)", in: .module, compatibleWith: nil) else {
+            assert(false, "이미지 로드 실패")
+        }
+        
+        self.image = image
         #endif
     }
     
