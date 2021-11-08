@@ -16,6 +16,12 @@ import UIKit
 
 public struct CDSCatchu {
     
+    // MARK: - Initalizing
+    
+    public init() {
+        
+    }
+    
     // MARK: - Enum
     
     public enum CatchuType: Int {
