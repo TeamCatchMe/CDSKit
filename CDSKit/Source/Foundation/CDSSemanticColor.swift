@@ -121,6 +121,10 @@ public enum CDSColor {
         return CDSBaseColor.gray50
     }
     
+    public static var secondarySeparator: UIColor {
+        return CDSBaseColor.gray30
+    }
+    
     
     //  MARK: - InputField
     

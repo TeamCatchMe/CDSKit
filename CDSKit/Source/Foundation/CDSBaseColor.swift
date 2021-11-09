@@ -89,6 +89,10 @@ public enum CDSBaseColor {
     public static var gray50: UIColor {
         return UIColor(hex: "#5C5C5C")
     }
+    
+    public static var gray30: UIColor {
+        return UIColor(hex: "#313131")
+    }
 
     // MARK: - Background Colors
     
