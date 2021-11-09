@@ -63,7 +63,7 @@ public enum CDSIcon {
     
     // MARK: - Button
     
-    public static var btnAddPhoto: UIImage { .load(name: "btnAddPhoto") }
+    public static var btnCamera: UIImage { .load(name: "buttonCamera") }
     public static var btnAlign: UIImage { .load(name: "btnAlign") }
     public static var btnBack: UIImage { .load(name: "btnBack") }
     public static var btnClose: UIImage { .load(name: "btnClose") }
