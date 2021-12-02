@@ -6,6 +6,7 @@
 //
 
 import Foundation
+#if !os(macOS)
 import UIKit
 
 public func registerFonts() {
@@ -43,3 +44,4 @@ extension UIFont {
         return true
     }
 }
+#endif

@@ -5,6 +5,7 @@
 //  Created by SHIN YOON AH on 2021/11/07.
 //
 
+#if !os(macOS)
 import UIKit
 
 public class CDSWidePageControl: UIView {
@@ -76,4 +77,4 @@ public class CDSWidePageControl: UIView {
         }
     }
 }
-
+#endif

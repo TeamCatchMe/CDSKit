@@ -5,6 +5,7 @@
 //  Created by SHIN YOON AH on 2021/11/07.
 //
 
+#if !os(macOS)
 import UIKit
 
 public class CDSPlainPageControl: UIView {
@@ -58,3 +59,4 @@ public class CDSPlainPageControl: UIView {
         }
     }
 }
+#endif

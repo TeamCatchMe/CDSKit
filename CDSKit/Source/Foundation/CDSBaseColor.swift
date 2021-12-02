@@ -5,6 +5,7 @@
 //  Created by SHIN YOON AH on 2021/10/31.
 //
 
+#if !os(macOS)
 import UIKit
 
 fileprivate extension UIColor {
@@ -168,4 +169,4 @@ public enum CDSBaseColor {
         return UIColor(hex: "#928D60")
     }
 }
-
+#endif

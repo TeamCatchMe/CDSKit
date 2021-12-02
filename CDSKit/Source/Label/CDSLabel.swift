@@ -5,6 +5,7 @@
 //  Created by SHIN YOON AH on 2021/10/31.
 //
 
+#if !os(macOS)
 import UIKit
 
 /**
@@ -55,4 +56,4 @@ public class CDSLabel: UILabel {
         }
     }
 }
-
+#endif

@@ -6,7 +6,8 @@ import PackageDescription
 let package = Package(
     name: "CDSKit",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v13),
+        .macOS(.v10_15)
     ],
     products: [
         .library(
@@ -14,13 +15,13 @@ let package = Package(
             targets: ["CDSKit"]),
     ],
     dependencies: [
-        .package(name: "SnapKit", url: "https://github.com/SnapKit/SnapKit", from: "5.0.0"),
+        .package(url: "https://github.com/SnapKit/SnapKit", .upToNextMajor(from: "5.0.1")),
     ],
     targets: [
         .target(
             name: "CDSKit",
             dependencies: [
-                .product(name: "SnapKit", package: "SnapKit")
+                .product(name: "SnapKit", package: "SnapKit", condition: .when(platforms: [.iOS]))
             ],
             path: "CDSKit/Source",
             resources: [
@@ -28,5 +29,6 @@ let package = Package(
                 .process("Foundation/CDSIcon.xcassets")
             ]
         )
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )

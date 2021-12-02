@@ -5,6 +5,7 @@
 //  Created by SHIN YOON AH on 2021/10/31.
 //
 
+#if !os(macOS)
 import UIKit
 import SnapKit
 
@@ -129,4 +130,4 @@ public class CDSPlainTextFieldView: UIView {
         setCounter(count: textField.text?.count ?? 0)
     }
 }
-
+#endif

@@ -5,6 +5,7 @@
 //  Created by SHIN YOON AH on 2021/10/31.
 //
 
+#if !os(macOS)
 import UIKit
 
 /**
@@ -41,3 +42,4 @@ public enum CDSFont {
     public static let catchu2 = UIFont.extraboldNanumFont(ofSize: 18)
     public static let catchu3 = UIFont.extraboldNanumFont(ofSize: 14)
 }
+#endif

@@ -5,6 +5,7 @@
 //  Created by SHIN YOON AH on 2021/10/31.
 //
 
+#if !os(macOS)
 import UIKit
 
 /**
@@ -38,4 +39,4 @@ extension UITextField {
         self.leftViewMode = .always
     }
 }
-
+#endif

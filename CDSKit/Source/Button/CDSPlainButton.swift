@@ -5,8 +5,9 @@
 //  Created by SHIN YOON AH on 2021/10/31.
 //
 
-import UIKit
-import SnapKit
+#if !os(macOS)
+    import UIKit
+    import SnapKit
 
 /**
   - Description:
@@ -162,4 +163,4 @@ public class CDSPlainButton: UIButton {
     }
     
 }
-
+#endif
