@@ -58,6 +58,8 @@ extension String {
                 return CDSFont.body5
             case .body6:
                 return CDSFont.body6
+            case .body7:
+                return CDSFont.body7
             case .caption0:
                 return CDSFont.caption0
             case .caption1:
