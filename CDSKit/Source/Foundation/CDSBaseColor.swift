@@ -71,10 +71,6 @@ public enum CDSBaseColor {
         return UIColor(hex: "#B7B7B7")
     }
 
-    public static var gray310: UIColor {
-        return UIColor(hex: "#A5A5A5")
-    }
-
     public static var gray300: UIColor {
         return UIColor(hex: "#858585")
     }
@@ -83,16 +79,8 @@ public enum CDSBaseColor {
         return UIColor(hex: "#737373")
     }
     
-    public static var gray100: UIColor {
-        return UIColor(hex: "#5E5E5E")
-    }
-    
     public static var gray50: UIColor {
         return UIColor(hex: "#5C5C5C")
-    }
-    
-    public static var gray30: UIColor {
-        return UIColor(hex: "#313131")
     }
 
     // MARK: - Background Colors

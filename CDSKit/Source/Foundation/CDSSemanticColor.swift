@@ -49,9 +49,9 @@ public enum CDSColor {
         return CDSBaseColor.gray300
     }
     
-    @available(*, deprecated, message: "This Color will be removed soon..")
+    @available(*, deprecated, renamed: "textTertiary", message: "This Color will be removed soon")
     public static var textQuaternary: UIColor {
-        return CDSBaseColor.gray310
+        return CDSBaseColor.gray300
     }
     
     public static var textQuinto: UIColor {
@@ -114,7 +114,7 @@ public enum CDSColor {
     }
     
     public static var buttonPopup: UIColor {
-        return CDSBaseColor.gray100
+        return CDSBaseColor.gray50
     }
     
     //  MARK: - Separator
@@ -124,7 +124,7 @@ public enum CDSColor {
     }
     
     public static var secondarySeparator: UIColor {
-        return CDSBaseColor.gray30
+        return CDSBaseColor.black200
     }
     
     
@@ -140,7 +140,7 @@ public enum CDSColor {
     
     @available(*, deprecated, message: "This Color will be removed soon..")
     public static var inputFieldPlaceholder: UIColor {
-        return CDSBaseColor.gray310
+        return CDSBaseColor.gray300
     }
     
     public static var inputFieldCounter: UIColor {
