@@ -22,6 +22,7 @@ public enum CDSIcon {
     public static var addcatchuDeco: UIImage { .load(name: "addcatchuDeco") }
     public static var deco: UIImage { .load(name: "deco") }
     public static var levelDeco: UIImage { .load(name: "levelDeco") }
+    public static var decoEmpty: UIImage { .load(name: "decoEmpty") }
     
     // MARK: - Catchu
     
@@ -118,6 +119,7 @@ public enum CDSIcon {
     public static var imgLevelTag3: UIImage { .load(name: "leveltag3") }
     public static var imgLevelTypo: UIImage { .load(name: "levelTypo") }
     public static var imgLogo: UIImage { .load(name: "logo") }
+    public static var imgEmpty: UIImage { .load(name: "imgEmpty") }
 
 }
 
