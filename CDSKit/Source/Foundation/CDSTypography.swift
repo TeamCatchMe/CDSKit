@@ -23,6 +23,7 @@ extension String {
         case body4
         case body5
         case body6
+        case body7
         case caption0
         case caption1
         case button0
