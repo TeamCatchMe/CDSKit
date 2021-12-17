@@ -118,6 +118,8 @@ extension CDSCatchuSelector where Self: UIImageView {
             default:
                 break
             }
+        case .empty:
+            self.image = CDSIcon.catchu
         case .none:
             break
         }
@@ -145,8 +147,10 @@ extension CDSCatchuSelector where Self: UIImageView {
             type = CDSIcon.bg700
         case .yellow:
             type = CDSIcon.bg800
-        case .none:
+        case .empty:
             type = nil
+        case .none:
+            break
         }
         
         self.image = type
@@ -176,8 +180,10 @@ extension CDSCatchuSelector where Self: UIView {
             colorType = CDSCatchuColor.purple.backgroundColor
         case .yellow:
             colorType = CDSCatchuColor.yellow.backgroundColor
+        case .empty:
+            colorType = CDSCatchuColor.none.backgroundColor
         case .none:
-            colorType = nil
+            break
         }
         
         self.backgroundColor = colorType
@@ -187,6 +193,7 @@ extension CDSCatchuSelector where Self: UIView {
 // MARK: - Enum
 
 enum CatchuType: Int {
+    case empty = 0
     case green = 1
     case yellowgreen = 2
     case orange = 3

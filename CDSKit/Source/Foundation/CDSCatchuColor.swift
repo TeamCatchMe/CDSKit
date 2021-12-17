@@ -24,6 +24,7 @@ public enum CDSCatchuColor {
     case blue
     case purple
     case yellow
+    case none
     
     public var backgroundColor: UIColor {
         switch self {
@@ -43,6 +44,8 @@ public enum CDSCatchuColor {
             return CDSColor.purplePrimaryBG
         case .yellow:
             return CDSColor.yellowPrimaryBG
+        case .none:
+            return CDSColor.secondaryBG
         }
     }
     
