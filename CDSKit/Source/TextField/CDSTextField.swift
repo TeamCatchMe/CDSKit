@@ -19,7 +19,7 @@ internal struct CDSTextField {
     internal enum Dimension {
         static let leftMargin: CGFloat = 17.0
         
-        static let rightMargin: CGFloat = 17.0
+        static let rightMargin: CGFloat = 48.0
         
         static let textFieldHeight: CGFloat = 50.0
         
@@ -37,6 +37,12 @@ extension UITextField {
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.size.height))
         self.leftView = paddingView
         self.leftViewMode = .always
+    }
+    
+    func setRightPaddingPoints(_ amount:CGFloat){
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.size.height))
+        self.rightView = paddingView
+        self.rightViewMode = .always
     }
 }
 #endif

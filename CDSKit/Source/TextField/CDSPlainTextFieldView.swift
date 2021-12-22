@@ -36,7 +36,9 @@ public class CDSPlainTextFieldView: UIView {
         set { textField.placeholder = newValue }
     }
     
-    public var maxCount: Int = 10
+    public var maxCount: Int = 10 {
+        didSet { setCounter(count: 0) }
+    }
     
     // MARK: - UI
     
