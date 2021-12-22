@@ -95,7 +95,6 @@ public class CDSPlainTextField: UITextField {
         setState()
         setMaskingState()
         setLeftPaddingPoints(CDSTextField.Dimension.leftMargin)
-        setRightPaddingPoints(CDSTextField.Dimension.rightMargin)
     }
     
     private func setState() {
