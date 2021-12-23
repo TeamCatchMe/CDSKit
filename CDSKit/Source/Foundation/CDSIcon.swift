@@ -77,7 +77,7 @@ public enum CDSIcon {
     public static var btnRemove: UIImage { .load(name: "btnRemove") }
     public static var btnSeeAll: UIImage { .load(name: "btnSeeAll") }
     public static var btnCheckboxActive: UIImage { .load(name: "btnCheckboxActive") }
-    public static var btnCheckboxInactive: UIImage { .load(name: "btnCcheckboxInactive") }
+    public static var btnCheckboxInactive: UIImage { .load(name: "btnCheckboxInactive") }
     public static var btnCheckboxAgreeActive: UIImage { .load(name: "btnCheckboxAgreeActive") }
     public static var btnCheckboxAgreeInactive: UIImage { .load(name: "btnCheckboxAgreeInactive") }
     public static var btnDirectionLeft: UIImage { .load(name: "btnDirectionLeft") }
