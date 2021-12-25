@@ -115,7 +115,7 @@ public class CDSSocialButton: UIButton {
         
         setTitle(type.text, for: .normal)
         setTitleColor(type.foreground, for: .normal)
-        setTitleColor(type.foreground.withAlphaComponent(0.5), for: .highlighted)
+        setTitleColor(type.foreground.withAlphaComponent(0.7), for: .highlighted)
         
         backgroundColor = type.background
         
