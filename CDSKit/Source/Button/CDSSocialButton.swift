@@ -113,7 +113,7 @@ public class CDSSocialButton: UIButton {
         
         self.titleLabel?.font = font
         
-        self.titleEdgeInsets = UIEdgeInsets(top: 0, left: 9, bottom: 0, right: 0)
+        self.titleEdgeInsets = UIEdgeInsets(top: 0, left: 12, bottom: 0, right: 0)
     }
     
     private func setSize() {
