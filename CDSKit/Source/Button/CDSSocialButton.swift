@@ -67,6 +67,17 @@ public class CDSSocialButton: UIButton {
                 return CDSIcon.icApple
             }
         }
+        
+        fileprivate var hoverIcon: UIImage {
+            switch self {
+            case .kakao:
+                return CDSIcon.icKakaoHover
+            case .naver:
+                return CDSIcon.icNaverHover
+            case .apple:
+                return CDSIcon.icAppleHover
+            }
+        }
     }
 
     // MARK: - Private Properties
@@ -102,6 +113,7 @@ public class CDSSocialButton: UIButton {
     
     private func setButtonConfiguration() {
         setImage(type.icon, for: .normal)
+        setImage(type.hoverIcon, for: .highlighted)
         
         setTitle(type.text, for: .normal)
         setTitleColor(type.foreground, for: .normal)
