@@ -107,6 +107,9 @@ public enum CDSIcon {
     public static var icWarning: UIImage { .load(name: "icWarning") }
     public static var icLock2Fill: UIImage { .load(name: "systemsLock2Fill") }
     public static var icUser3Fill: UIImage { .load(name: "usersUser3Fill") }
+    public static var icKakao: UIImage { .load(name: "icKakao") }
+    public static var icNaver: UIImage { .load(name: "icNaver") }
+    public static var icApple: UIImage { .load(name: "icApple") }
     
     // MARK: - Image
     

@@ -101,6 +101,14 @@ public enum CDSBaseColor {
         return UIColor(hex: "#000000", alpha: 0.8)
     }
     
+    public static var kakaoBackground: UIColor {
+        return UIColor(hex: "#FEE500")
+    }
+    
+    public static var naverBackground: UIColor {
+        return UIColor(hex: "#03C75A")
+    }
+    
     //  MARK: - Catchu-back Colors
     
     public static var catchu100: UIColor {
@@ -136,6 +144,7 @@ public enum CDSBaseColor {
     }
     
     // MARK: - Check Colors
+    
     public static var red100: UIColor {
         return UIColor(hex: "#EA4545")
     }
@@ -145,6 +154,7 @@ public enum CDSBaseColor {
     }
     
     // MARK: - Hover Colors
+    
     public static var hover100: UIColor {
         return UIColor(hex: "#FCFCFC", alpha: 0.35)
     }
@@ -155,6 +165,10 @@ public enum CDSBaseColor {
     
     public static var hover200: UIColor {
         return UIColor(hex: "#928D60")
+    }
+    
+    public static var socialHover: UIColor {
+        return UIColor(hex: "#57886D")
     }
 }
 #endif
