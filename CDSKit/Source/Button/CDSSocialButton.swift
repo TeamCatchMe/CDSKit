@@ -91,8 +91,6 @@ public class CDSSocialButton: UIButton {
     private var height: CGFloat = 50
     
     private var rounding: CGFloat = 12
-    
-    private var hoverColor: UIColor = CDSBaseColor.socialHover
 
     // MARK: - Initalizing
     
