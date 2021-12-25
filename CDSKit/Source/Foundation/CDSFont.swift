@@ -34,6 +34,7 @@ public enum CDSFont {
     
     public static let caption0 = UIFont.regularDINProFont(ofSize: 14)
     public static let caption1 = UIFont.boldSpoqaFont(ofSize: 12)
+    public static let caption2 = UIFont.regularSpoqaFont(ofSize: 12)
     
     public static let button0 = UIFont.mediumSpoqaFont(ofSize: 16)
     public static let button1 = UIFont.mediumSpoqaFont(ofSize: 14)

@@ -26,6 +26,7 @@ extension String {
         case body7
         case caption0
         case caption1
+        case caption2
         case button0
         case button1
         case catchu0
@@ -65,6 +66,8 @@ extension String {
                 return CDSFont.caption0
             case .caption1:
                 return CDSFont.caption1
+            case .caption2:
+                return CDSFont.caption2
             case .button0:
                 return CDSFont.button0
             case .button1:
