@@ -166,9 +166,5 @@ public enum CDSBaseColor {
     public static var hover200: UIColor {
         return UIColor(hex: "#928D60")
     }
-    
-    public static var socialHover: UIColor {
-        return UIColor(hex: "#57886D")
-    }
 }
 #endif
