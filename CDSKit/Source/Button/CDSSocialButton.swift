@@ -27,7 +27,7 @@ public class CDSSocialButton: UIButton {
         
         fileprivate var text: String {
             switch self {
-            case .kakao,
+            case .kakao:
                 return "카카오 로그인"
             case .naver:
                 return "네이버 로그인"
@@ -38,7 +38,7 @@ public class CDSSocialButton: UIButton {
         
         fileprivate var background: UIColor {
             switch self {
-            case .kakao,
+            case .kakao:
                 return CDSBaseColor.kakaoBackground
             case .naver:
                 return CDSBaseColor.naverBackground
@@ -59,7 +59,7 @@ public class CDSSocialButton: UIButton {
         
         fileprivate var icon: UIImage {
             switch self {
-            case .kakao,
+            case .kakao:
                 return CDSIcon.icKakao
             case .naver:
                 return CDSIcon.icNaver
