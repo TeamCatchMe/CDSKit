@@ -188,6 +188,33 @@ extension CDSCatchuSelector where Self: UIView {
         
         self.backgroundColor = colorType
     }
+    
+    public func selectedCatchuLayerColor(color: Int) -> UIColor {
+        let value = CatchuType.init(rawValue: color)
+        
+        switch value {
+        case .green:
+            return CDSCatchuColor.green.backgroundColor
+        case .yellowgreen:
+            return CDSCatchuColor.yellowgreen.backgroundColor.cgColor
+        case .orange:
+            return CDSCatchuColor.orange.backgroundColor.cgColor
+        case .skyblue:
+            return CDSCatchuColor.skyblue.backgroundColor.cgColor
+        case .white:
+            return CDSCatchuColor.white.backgroundColor.cgColor
+        case .blue:
+            return CDSCatchuColor.blue.backgroundColor.cgColor
+        case .purple:
+            return CDSCatchuColor.purple.backgroundColor.cgColor
+        case .yellow:
+            return CDSCatchuColor.yellow.backgroundColor.cgColor
+        case .empty:
+            return CDSCatchuColor.none.backgroundColor.cgColor
+        case .none:
+            break
+        }
+    }
 }
 
 // MARK: - Enum
