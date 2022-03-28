@@ -211,8 +211,8 @@ extension CDSCatchuSelector where Self: UIView {
             return CDSCatchuColor.yellow.backgroundColor
         case .empty:
             return CDSCatchuColor.none.backgroundColor
-        case .none:
-            break
+        default:
+            return UIColor()
         }
     }
 }
