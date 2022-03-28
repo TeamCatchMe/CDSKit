@@ -196,21 +196,21 @@ extension CDSCatchuSelector where Self: UIView {
         case .green:
             return CDSCatchuColor.green.backgroundColor
         case .yellowgreen:
-            return CDSCatchuColor.yellowgreen.backgroundColor.cgColor
+            return CDSCatchuColor.yellowgreen.backgroundColor
         case .orange:
-            return CDSCatchuColor.orange.backgroundColor.cgColor
+            return CDSCatchuColor.orange.backgroundColor
         case .skyblue:
-            return CDSCatchuColor.skyblue.backgroundColor.cgColor
+            return CDSCatchuColor.skyblue.backgroundColor
         case .white:
-            return CDSCatchuColor.white.backgroundColor.cgColor
+            return CDSCatchuColor.white.backgroundColor
         case .blue:
-            return CDSCatchuColor.blue.backgroundColor.cgColor
+            return CDSCatchuColor.blue.backgroundColor
         case .purple:
-            return CDSCatchuColor.purple.backgroundColor.cgColor
+            return CDSCatchuColor.purple.backgroundColor
         case .yellow:
-            return CDSCatchuColor.yellow.backgroundColor.cgColor
+            return CDSCatchuColor.yellow.backgroundColor
         case .empty:
-            return CDSCatchuColor.none.backgroundColor.cgColor
+            return CDSCatchuColor.none.backgroundColor
         case .none:
             break
         }
