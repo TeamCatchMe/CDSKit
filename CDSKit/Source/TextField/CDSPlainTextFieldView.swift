@@ -28,7 +28,10 @@ public class CDSPlainTextFieldView: UIView {
     
     public var text: String? {
         get { return textField.text }
-        set { textField.text = newValue }
+        set {
+            textField.text = newValue
+            setCounter(count: textField.text?.count ?? 0)
+        }
     }
     
     public var placeholder: String? {
