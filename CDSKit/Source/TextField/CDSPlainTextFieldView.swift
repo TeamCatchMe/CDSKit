@@ -28,10 +28,7 @@ public class CDSPlainTextFieldView: UIView {
     
     public var text: String? {
         get { return textField.text }
-        set {
-            textField.text = newValue
-            setCounter(count: textField.text?.count ?? 0)
-        }
+        set { textField.text = newValue }
     }
     
     public var placeholder: String? {
@@ -40,7 +37,7 @@ public class CDSPlainTextFieldView: UIView {
     }
     
     public var maxCount: Int = 10 {
-        didSet { setCounter(count: 0) }
+        didSet { setCounter(count: text?.count ?? 0) }
     }
     
     // MARK: - UI
@@ -74,7 +71,7 @@ public class CDSPlainTextFieldView: UIView {
     // MARK: - Setting Method
     
     private func setView() {
-        setCounter(count: 0)
+        setCounter(count: text?.count ?? 0)
         
         countLabel.isHidden = true
         
