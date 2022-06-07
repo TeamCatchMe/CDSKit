@@ -70,6 +70,7 @@ public enum CDSIcon {
     public static var btnBack: UIImage { .load(name: "btnBack") }
     public static var btnClose: UIImage { .load(name: "btnClose") }
     public static var btnDatepickerCheck: UIImage { .load(name: "btnDatepickerCheck") }
+    public static var btnDeleteCatchu: UIImage { .load(name: "btnDeleteCatchu") }
     public static var btnDropdown: UIImage { .load(name: "btnDropdown") }
     public static var btnGuide: UIImage { .load(name: "btnGuide") }
     public static var btnMore: UIImage { .load(name: "btnMore") }
