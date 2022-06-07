@@ -73,6 +73,7 @@ public enum CDSIcon {
     public static var btnDropdown: UIImage { .load(name: "btnDropdown") }
     public static var btnGuide: UIImage { .load(name: "btnGuide") }
     public static var btnMore: UIImage { .load(name: "btnMore") }
+    public static var btnMoreBig: UIImage { .load(name: "btnMoreBig") }
     public static var btnProfileEdit: UIImage { .load(name: "btnProfileEdit") }
     public static var btnRemove: UIImage { .load(name: "btnRemove") }
     public static var btnSeeAll: UIImage { .load(name: "btnSeeAll") }
